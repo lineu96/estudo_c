@@ -1,4 +1,4 @@
-// Aula 3 -
+// Aula 3 - declarando variaveis
 
 # include <stdio.h>
 # include <stdlib.h>

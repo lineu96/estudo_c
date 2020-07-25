@@ -1,48 +1,36 @@
+// Aula 4 - operadores aritméticos
+
 # include <stdio.h>
 # include <stdlib.h>
 
-// Operadores aritméticos
-// Soma +
-// Subtração -
-// Multiplicação *
-// Divisão /
-// Módulo (resto da divisão) %
+int main(void){
+    printf("\nOperadores aritmeticos (+,-,*,/,%)\n");
+    printf("\n---------------------------------------\n");
 
-// Operadores relacionais
-// Maior >
-// Maior ou igual <=
-// Menor <
-// Menor ou igual <=
-// Igual ==
-// Diferente !=
+    printf("\nSoma (+): 1+1\n");
+    printf("%i", 1+1);
 
-int main(){
+    printf("\n---------------------------------------\n");
 
-    printf("Operadores Aritméticos:\n");
-    printf("%d\n", 1+1);
-    printf("%d\n", 1-1);
-    printf("%d\n", 3*2);
-    printf("%d\n", 10/5);
-    printf("%d\n", 9%4);
+    printf("\nSubtracao (-): 10-5\n");
+    printf("%i", 10-5);
 
-    printf("\n\nOperadores Relacionais:\n");
-        int a = 1, b = 10, c = 1, d = 100;
+    printf("\n---------------------------------------\n");
 
-    if (a < b){
-        printf("%i é menor que %i\n", a,b);
-    }
+    printf("\nMultiplicacao (*): 4*4\n");
+    printf("%i", 4*4);
 
-    if (d > c){
-        printf("%i é maior que %i\n", d,c);
-    }
+    printf("\n---------------------------------------\n");
 
-    if (a == c){
-        printf("%i é igual a %i\n", a,c);
-    }
+    printf("\nDivisao (/): 50/10\n");
+    printf("%d", 50/10);
 
-    if (d == c || d == a){
-        printf("%c é igual a %c ou %c\n", d,c,a);
-    }
+    printf("\n---------------------------------------\n");
 
-    return 0;
+    printf("\nResto da divisao inteira (%): 9%4\n");
+    printf("%d", 9%4);
+
+    printf("\n---------------------------------------\n");
+return 0;
+
 }
