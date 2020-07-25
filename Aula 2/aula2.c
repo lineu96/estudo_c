@@ -1,18 +1,18 @@
+// Aula 2 - printf e scanf
+// scanf() - ler entrada do teclado
+
 # include <stdio.h>
 # include <stdlib.h>
 
-// printf e scanf
+int main(void){
 
-int main(){
+    int numero;
 
-    int numero; // declara variavel tipo inteira
+    printf("Digite um numero: \n");
+    scanf("%i", &numero);
 
-    printf("Digite um número inteiro: ");
-    scanf("%i", &numero); // le uma variavel inteira (%i) e armazena na variavel numero (&numero)
+    printf("\nVoce digitou %i\n", numero);
 
-    getchar() // limpa buffer do teclado
+return 0;
 
-    printf("\nVocê digitou o número %i.\n", numero);
-
-    return 0;
 }

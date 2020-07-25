@@ -1,9 +1,12 @@
+// Aula 1 - printf
+
 # include <stdio.h>
 
-// Hello world
-// printf()
+int main(void){
 
-int main() {
-    printf("\n Hello World! \n Texto em outra linha \n");
-    return 0;
+    printf("Olá mundo\n\n" );
+    printf("Primeiro programa em C\n\n");
+
+return 0;
+
 }
