@@ -1,33 +1,39 @@
+// Aula 8 - exercicio: conversor decimal - hexadecimal
+
 # include <stdio.h>
 # include <stdlib.h>
 
-// conversor de bases numéricas
-
-int main(){
+int main(void){
 
     int opcao, valor;
-
-    printf("----------------------------\n\n");
-    printf("Conversor de bases numéricas\n");
-    printf("----------------------------\n\n");
-
-    printf("1: decimal para hexadecimal\n");
-    printf("2: hexadecimal para decimal\n");
-    printf("Informe a opção: ");
+    printf("---------------------------------------\n");
+    printf("CONVERSOR DECIMAL/HEXADECIMAL\n");
+    printf("---------------------------------------\n");
+    printf("Digite 1 para converter decimal para hexadecimal\n");
+    printf("Digite 2 para converter hexadecimal para decimal\n");
+    printf("---------------------------------------\n");
 
     scanf("%i", &opcao);
 
-    if (opcao == 1){
-        printf("Digite o valor decimal: ");
-        scanf("%d",&valor);
-        printf("%d em hexadecimal é %x\n", valor,valor);
-    } else if (opcao == 2){
-            printf("Digite o valor em hexadecimal: ");
-            scanf("%x", &valor);
-            printf("%x em decimal é %d\n", valor,valor);
-        } else {
-            printf("Opção inválida!");
-        }
+    printf("---------------------------------------\n");
 
-    return 0;
+    if(opcao == 1){
+        printf("Digite digite o valor a ser convertido: \n");
+        scanf("%i", &valor);
+        printf("---------------------------------------\n");
+        printf("%i em hexadecimal é %x\n", valor, valor);
+        printf("---------------------------------------\n");
+    } else if (opcao == 2){
+        printf("Digite digite o valor a ser convertido: \n");
+        scanf("%x", &valor);
+        printf("---------------------------------------\n");
+        printf("%x em decimal é %i\n", valor, valor);
+        printf("---------------------------------------\n");
+    } else {
+        printf("---------------------------------------\n");
+        printf("Opção inválida!\n");
+        printf("---------------------------------------\n");
+    }
+
+return 0;
 }
