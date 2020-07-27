@@ -1,34 +1,33 @@
+// Aula 13 - while & do while
+
 # include <stdio.h>
 # include <stdlib.h>
 
 int main(){
 
-    int i;
+    printf("---------------------------------------\n");
+    printf("WHILE & DO WHILE\n");
+    printf("---------------------------------------\n");
 
-    printf("\nWHILE\n");
-    while(i<11){
+    printf("WHILE\n");
+
+    int i = 1;
+
+    while(i<=10){
         printf("%i\n",i);
-        i+=1;
+        i++;
     }
 
-    int j;
+    printf("---------------------------------------\n");
 
-    printf("\nDO WHILE\n");
-    do {
-        printf("%i \n", j);
-        j+=1;
-    } while(j<11);
+    printf("DO WHILE\n");
 
-// LOOPS INFINITOS
+    i=1;
 
-//    while(1){
-//        printf("%i\n", i);
-//        i+=1;
-//    }
-
-// for(;;i++){
-//     printf("%i\n",i);
-// }
+    do{
+        printf("%i\n",i);
+        i++;
+    } while(i<=10);
 
     return 0;
 }

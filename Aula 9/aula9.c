@@ -1,35 +1,44 @@
+// Aula 9 - for
+
 # include <stdio.h>
 # include <stdlib.h>
 
-/*
-    for(inicialização; condição; incremento)
-    {
-        comandos;
-    }
-*/
+int main(void){
 
-int main(){
+    /*
+    for (inicialização;condição;incremento){
+        BLOCO
+        }
+    */
+
+    printf("---------------------------------------\n");
+    printf("FOR\n");
+
     int i,j;
 
-    for(i=1;i<11;i++){
-        printf("%i ", i);
+    printf("For com incremento\n");
+
+    for(i=1;i<=10;i++){
+        printf("%i\n",i);
     }
 
-    printf("\n");
+    printf("---------------------------------------\n");
+    printf("For com decremento\n");
 
-    for(i = 10; i>0; i--){
-        printf("%i ", i);
+    for(i=10;i>=1;i--){
+        printf("%i\n",i);
     }
 
-    printf("\n");
+    printf("---------------------------------------\n");
+    printf("For aninhado\n");
 
-    for(i = 1; i < 5; i++){
-        for(j = 1; j < 5; j++){
-            printf("%i %i \n", i,j);
+    for(i=1;i<=5;i++){
+        for(j=1;j<=3;j++){
+            printf("%i,%i\n",i,j);
         }
         printf("\n");
     }
 
+return 0;
 
-    return 0;
 }

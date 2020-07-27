@@ -1,3 +1,5 @@
+// Aula 10 - switch
+
 # include <stdio.h>
 # include <stdlib.h>
 
@@ -19,37 +21,38 @@
 
 */
 
-int main(){
+int main(void){
 
     int opcao, valor;
+    printf("---------------------------------------\n");
+    printf("CONVERSOR DECIMAL/HEXADECIMAL\n");
+    printf("---------------------------------------\n");
+    printf("Digite 1 para converter decimal para hexadecimal\n");
+    printf("Digite 2 para converter hexadecimal para decimal\n");
+    printf("---------------------------------------\n");
 
-    printf("----------------------------\n");
-    printf("Conversor de bases numéricas\n");
-    printf("----------------------------\n\n");
-
-    printf("Para converter de decimal para hexadecimal, tecle 1\n");
-    printf("Para converter de hexadecimal para decimal, tecle 2\n");
-
-    printf("Digite a opção: ");
+    printf("Opção:  ");
     scanf("%i", &opcao);
 
     switch(opcao){
+
         case 1:
-            printf("Digite o valor em decimal: ");
+            printf("Digite o valor decimal: ");
             scanf("%i", &valor);
-            printf("%i em hexadecimal é %x", valor, valor);
+            printf("%i em hexa é igual a %x\n", valor,valor);
         break;
 
         case 2:
-            printf("Digite o valor em hexadecimal: ");
+            printf("Digite o valor hexadecimal: ");
             scanf("%x", &valor);
-            printf("%x em decimal é %i", valor, valor);
+            printf("%x em decimal é igual a %i", valor, valor);
         break;
 
         default:
             printf("Opção inválida");
-    }
+        break;
 
+    }
 
     return 0;
 }
