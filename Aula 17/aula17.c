@@ -1,3 +1,5 @@
+// Aula 17 - strings
+
 # include <stdio.h>
 # include <stdlib.h>
 
@@ -6,36 +8,37 @@
  o ultimo caractere é o nulo \o
 */
 
-# include <string.h>
+# include <string.h> //biblioteca especializada
 
 int main(){
-    char nome[51], snome[51];
-    int comp1, comp2;
 
-    printf("--------\n");
-    printf("Strings \n");
-    printf("--------\n");
+    printf("-----------------------------\n");
+    printf("STRINGS\n");
+    printf("-----------------------------\n");
 
-    printf("Escreva seu nome: ");
+    char nome[50+1], snome[50+1];
+
+    printf("Digite seu nome: ");
     scanf("%s", &nome);
-    comp1 = strlen(nome);
 
-    printf("Escreva seu sobrenome: ");
+    printf("-----------------------------\n");
+
+    printf("Digite seu sobrenome: ");
     scanf("%s", &snome);
-    comp2 = strlen(snome);
 
-    strcat(nome, " "); // concatena strings (a primeira é a de destino)
-    strcat(nome, snome); // concatena strings
+    printf("-----------------------------\n");
 
-    printf("-------------------\n");
-    printf("Olá %s\n", nome);
+    strcat(nome, " ");
+    strcat(nome, snome);
 
-    printf("-------------------\n");
+    printf("Olá %s", nome);
 
-    printf("Seu nome tem %i caracteres\n", comp1);
-    printf("Seu sobrenome tem %i caracteres\n", comp2);
+    printf("\n-----------------------------\n");
 
-    printf("-------------------\n");
+    printf("Seu nome todo tem %i letras.\n", strlen(nome)-1);
+    printf("Seu primeiro nome tem %i letras.\n", strlen(nome)-strlen(snome)-1);
+    printf("Seu sobrenome tem %i letras.", strlen(snome));
+    printf("\n-----------------------------\n");
 
     return 0;
 }
