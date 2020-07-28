@@ -1,17 +1,31 @@
+// Aula 18 - matrizes
+
 # include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
 
-# define dim1 3
-# define dim2 3
+// tipo nome[dim1][dim2]...[dimn];
 
-int main(){
+int main(void){
 
-    int i,j;
-    int matriz[dim1][dim2];
+    int linhas, colunas, i, j;
 
-    for(i = 0; i < dim1; i++){
-        for(j = 0; j < dim2; j++){
+    printf("-----------------------------\n");
+    printf("MATRIZES (VETORES MULTIDIMENSIONAIS)\n");
+    printf("-----------------------------\n");
+
+    printf("Informe o número de linhas da matriz: ");
+    scanf("%i", &linhas);
+
+    printf("Informe o número de colunas da matriz: ");
+    scanf("%i", &colunas);
+
+    printf("-----------------------------\n");
+
+    int matriz[linhas][colunas];
+
+     for(i = 0; i < linhas; i++){
+        for(j = 0; j < colunas; j++){
 
         printf("Linha %i, Coluna %i: ", i,j);
         scanf("%i", &matriz[i][j]);
@@ -20,18 +34,16 @@ int main(){
 
     }
 
-    printf("------\n");
-    printf("Matriz\n");
-    printf("------\n");
+    printf("-----------------------------\n");
+    printf("Matriz fornecida\n");
+    printf("-----------------------------\n");
 
-    for(i=0;i<dim1;i++){
-        for(j=0;j<dim2;j++){
+    for(i=0;i<linhas;i++){
+        for(j=0;j<colunas;j++){
             printf("%i ", matriz[i][j]);
         }
         printf("\n");
     }
-
-    printf("------\n");
 
 
     return 0;

@@ -1,19 +1,16 @@
+// Aula 20 - ponteiros
+
 # include <stdio.h>
 # include <stdlib.h>
 
 // Ponteiros
 
 /*
-So apontadores para endereços de memória
+Sao apontadores para endereços de memória
 
-A variável tem um valor
-Este valor é armazenado em um endereço da memória
+A variável tem um valor, este valor é armazenado em um endereço da memória
 
-Um ponteiro ocupa um espaço na memória,
-ou seja,
-tem outro endereço que aponta para o endereço da variavel original
-
-O ponteiro armazena o endereço na memória da variável
+O ponteiro que aponta para esta variavel diz em o endereço na memoria em que o valor está
 
 */
 
@@ -22,18 +19,27 @@ O ponteiro armazena o endereço na memória da variável
 
 int main(){
 
-    int variavel = 250; // variavel inteira
-    int *ponteiro; // ponteiro para a variavel
-    int exibe; // variavel que vai exibir o valor 250
+    printf("-----------------------------\n");
+    printf("PONTEIROS\n");
+    printf("-----------------------------\n");
 
-    ponteiro = &variavel; // ponteiro esta apontando para o endereço da variável
+    printf("variavel recebe um valor\n");
+    printf("ponteiro recebe o endereço da variavel (&variavel)\n");
+    printf("*ponteiro mostra o conteudo da variavel\n");
+    printf("ponteiro mostra o endereço da variavel\n");
+    printf("-----------------------------\n");
 
-    exibe = *ponteiro; // recebe o conteudo do endereço para o qual o ponteiro aponta
+    int variavel; // variavel inteira igual a 250
+    int *ponteiro;      // ponteiro para a variavel
 
-    printf("%i\n", exibe);
-    printf("%i\n", ponteiro);
-    printf("%i\n", *ponteiro);
+    printf("Digite um valor: ");
+    scanf("%i", &variavel);
 
+    ponteiro = &variavel; // ponteiro recebe o endereço de memoria da variavel
+
+    printf("Sua variavel está no endereço %p e possui valor %i\n", ponteiro, *ponteiro);
+
+    printf("-----------------------------\n");
 
     return 0;
 }
