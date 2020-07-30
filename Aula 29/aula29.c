@@ -1,3 +1,5 @@
+// Aula 29 - estrutura de dados
+
 # include <stdio.h>
 # include <stdlib.h>
 
@@ -6,13 +8,17 @@
 /*
     struct nome_da_estrutura
     {
-        nome tipo;
-        nome tipo;
-        nome tipo;
+        tipo nome;
+        tipo nome;
+        tipo nome;
     };
 */
 
 int main(){
+
+    printf("-----------------------------\n");
+    printf("ESTRUTURA DE DADOS COM STRUCT\n");
+    printf("-----------------------------\n");
 
 
     struct dados{

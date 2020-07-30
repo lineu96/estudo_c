@@ -1,27 +1,46 @@
+// Aula 31 - estruturas em funções
+
 # include <stdio.h>
 # include <stdlib.h>
 
-struct estrutura {
-    int a;
-    int b;
-    char c;
-};
+struct dados{
+    char nome[51];
+    int idade;
+    float altura;
+    float peso;
+    };
 
-void imprimir(struct estrutura parametro){
-    printf("%i\n", parametro.a);
-    printf("%i\n", parametro.b);
-    printf("%c\n", parametro.c);
+
+void imprimir(struct dados parametro){
+    printf("----------------------------------------\n");
+    printf("Pessoa 1   \n");
+
+    printf("Nome: %s   \n", parametro.nome);
+    printf("Idade: %i  \n", parametro.idade);
+    printf("Altura: %.2f \n", parametro.altura);
+    printf("Peso: %.2f   \n", parametro.peso);
+    printf("----------------------------------------\n");
 }
 
 int main(){
 
-    struct estrutura argumento;
+    struct dados pessoa1;
 
-    argumento.a = 10;
-    argumento.b = 15;
-    argumento.c = 'd';
+    printf("----------------------------------------\n");
 
-    imprimir(argumento);
+    printf("Escreva seu nome: ");
+    scanf("%s", &pessoa1.nome);
+
+    printf("Escreva sua idade: ");
+    scanf("%i", &pessoa1.idade);
+
+    printf("Escreva sua altura: ");
+    scanf("%f", &pessoa1.altura);
+
+    printf("Escreva seu peso: ");
+    scanf("%f", &pessoa1.peso);
+
+    imprimir(pessoa1);
 
     return 0;
 }
