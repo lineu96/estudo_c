@@ -1,3 +1,5 @@
+// Aula 33 - unions
+
 # include <stdio.h>
 # include <stdlib.h>
 
@@ -18,6 +20,10 @@ struct estrutura2 {
 };
 
 int main(){
+
+    printf("-----------------------------\n");
+    printf("ESTRUTURA DE DADOS COM UNION\n");
+    printf("-----------------------------\n");
 
     printf("União %i\n", sizeof(union estrutura1));
     printf("Estrutura %i\n", sizeof(struct estrutura2));

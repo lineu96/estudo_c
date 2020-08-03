@@ -1,3 +1,5 @@
+// Aula 35 - typedef
+
 # include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
@@ -20,6 +22,10 @@ typedef float flutuante;
 typedef char caracter;
 
 int main(){
+
+    printf("-----------------------------\n");
+    printf("TYPEDEF\n");
+    printf("-----------------------------\n");
 
     inteiro x;
     flutuante a;

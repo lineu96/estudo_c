@@ -1,3 +1,5 @@
+// Aula 38 - funções que retornam nao inteiros
+
 # include <stdio.h>
 # include <stdlib.h>
 # include <math.h>
@@ -11,6 +13,11 @@ float area_circulo(float raio);
 
 // Principal
 int main(){
+
+    printf("-----------------------------\n");
+    printf("FUNÇÕES QUE RETORNAM NÃO INTEIROS\n");
+    printf("-----------------------------\n");
+
     float a,b;
 
     printf("O float digitado será arredondado para baixo: ");

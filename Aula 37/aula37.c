@@ -1,3 +1,5 @@
+// Aula 37 - funções que retornam inteiros
+
 # include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
@@ -14,6 +16,11 @@ int dv(int n1, int n2);
 /* ---- Main ---- */
 
 int main(){
+
+    printf("-----------------------------\n");
+    printf("FUNÇÕES QUE RETORNAM INTEIROS\n");
+    printf("-----------------------------\n");
+
     int a,b;
 
     printf("Forneça um valor: \n");
