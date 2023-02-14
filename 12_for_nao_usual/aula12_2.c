@@ -7,7 +7,7 @@ int main(){
 
     int i;
 
-    for(i=0; i!=12; ){
+    for(i!=12; ){
 
         printf("Digite o número correto: ");
         scanf("%i", &i);
